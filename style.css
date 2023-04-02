@@ -10,6 +10,10 @@
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: #222;
+}
 h1 {
   font-size: 50px;
   line-height: 64px;
@@ -108,6 +112,15 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+/* Tricks to hide mobile devices's buttons */
+#mobile {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
 /*-----------------------------HERO SECTION STYLE-----------------------------------*/
 
 #hero {
@@ -182,6 +195,7 @@ body {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   padding: 20px 0;
   border-radius: 4px;
+  margin: 15px 0;
 }
 
 #feature .fe-box:hover {
@@ -524,8 +538,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
-  padding: 80px 0;
+  height: 100%;
   background-image: url(assets/img/banner/b14.png);
   background-color: #f1f1f1;
 }
@@ -536,7 +549,6 @@ body {
   justify-content: space-evenly;
   align-items: first baseline;
   width: 100%;
-  margin-top: 80px;
 }
 
 .contact img {
@@ -625,4 +637,209 @@ body {
 
 .copyrights p {
   padding: 12px 4px 0px 4px;
+}
+
+/*-----------------------------  MEDIA  QUERIES  -----------------------------------*/
+
+/*-----------------------------  TABLET DEVICES  -----------------------------------*/
+
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.5s ease-in;
+    z-index: 999;
+  }
+
+  #close {
+    display: unset;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1.75rem;
+  }
+
+  #navbar.activeNav {
+    right: 0px;
+    transition: 0.5s ease-out;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.75rem;
+    opacity: 0.9;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #hero {
+    background-position: top 30% right 60%;
+    height: 70vh;
+    padding: 0 80px;
+  }
+
+  #product1 .pro-container,
+  #product2 .pro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  #product1 .pro,
+  #product2 .pro {
+    width: 45%;
+    min-width: 250px;
+    padding: 15px 15px;
+    border: 1px solid rgba(160, 159, 159, 0.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  #sm-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #sm-banner .banner-box {
+    width: 100%;
+    height: 30vh;
+    padding: 0 25px;
+    border-radius: 2px;
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+  }
+  #sm-banner .banner-box:nth-child(3),
+  #sm-banner .banner-box:nth-child(4),
+  #sm-banner .banner-box:nth-child(5) {
+    width: 100%;
+    height: 30vh;
+  }
+
+  #newsletter .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 80px;
+    text-align: center;
+  }
+
+  #newsletter .newsletter-container .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #newsletter .newsletter-container #newsletter_mail {
+    padding: 12px 8px 8px;
+    width: 55%;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+  }
+
+  .footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+/*-----------------------------  MOBILE DEVICES  -----------------------------------*/
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px 10px;
+    }
+
+    #header {
+        padding: 20px 10px;
+    }
+
+    #hero {
+        background-position: top 30% right 40%;
+        height: 70vh;
+        padding: 0 10px;
+    }
+
+    #hero h1,
+    #hero h2{
+        font-size: 32px;
+        line-height: 38px;
+        max-width: 70%;
+    }
+
+    #hero p{
+        max-width: 55%;
+    }
+
+    #hero button {
+        font-size: 16px;
+        font-weight: 800;
+        padding: 14px 50px;
+    }
+    #feature {
+        padding:20px 10px;
+    }
+
+    #feature .fe-box {
+        width: 160px;
+    }
+
+    #product1 .pro, #product2 .pro {
+        width: 100%;
+    }
+
+    #banner {
+        height: 100%;
+    }
+    #sm-banner .banner-box {
+        width: 90%;
+        height: 50vh;
+        padding: 0 10px;
+        margin: 0px 0px 10px;
+    }
+
+    #newsletter .newsletter-container {
+        padding: 0 10px;
+    }
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
 }
