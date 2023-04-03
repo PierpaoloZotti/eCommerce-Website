@@ -1014,6 +1014,7 @@ body {
     margin:50px 130px;
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 16px;
+    gap:50px;
 }
 
 #form-details span{
@@ -1032,6 +1033,7 @@ body {
     justify-content: flex-start;
     width: 50%;
     gap: 20px;
+  
 }
 #form-details input,
 #form-details textarea{
@@ -1044,6 +1046,39 @@ body {
 #form-details textarea:focus{
     outline: none;
     
+}
+
+#form-details .people{
+    width: 40%;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#form-details .people .person{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-details .people .person img{
+    clip-path: circle(40% at 50% 50%);
+    width:320px;
+    height:320px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#form-details .people .person p span{
+    font-size: 18px;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 5px;
+}
+#form-details .people .person p{
+    line-height: 20px;
 }
 
 /*-----------------------------  MEDIA  QUERIES  -----------------------------------*/
@@ -1190,7 +1225,24 @@ body {
     width: 100%;
     height: 300px;
 }
+
+#form-details {
+    margin: 20px 20px;
+    gap: 30px;
 }
+
+#form-details .people .person img {
+    width: 200px;
+    height: 200px;
+    margin-right: 0px;
+}
+#form-details .people {
+    width: 30%;
+    margin-left: 80px;
+}
+
+}
+
 
 
 
@@ -1318,6 +1370,62 @@ body {
         height: 80%;
         margin: 30px auto 15px;
         filter: drop-shadow(1px 25px 20px rgba(0,0,0,0.3));
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact .contact-info {
+        margin-right:0px;
+        width: 100%;
+    }
+
+    #contact .contact-info h3 {
+        font-size: 24px;
+        margin: 8px 0;
+    }
+    .contact-map {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    #form-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 8px;
+        border-radius: 8px;
+        gap: 20px;
+    }
+
+    #form-details form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+    #form-details h2 {
+        font-size: 24px;
+        margin: 8px 0;
+        letter-spacing: -1.5px;
+    }
+    #form-details .people {
+        width: 100%;
+    }
+    #form-details .people .person {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: -60px;
+    }
+    #form-details .people .person img {
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
     }
 }
 
