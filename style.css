@@ -866,6 +866,186 @@ body {
     color: #465b52;
     z-index: -1;
 }
+
+/*-----------------------------  ABOUT PAGE STYLE  -----------------------------------*/
+
+#hero-about{
+    background-image: url('assets/img/about/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hero-about h2,
+#hero-about p{
+    color: #e3e6f3;
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head .about-img{
+    width:50%;
+    margin-right: 50px;
+}
+
+#about-head .about-img img{
+    width:100%;
+    height:400px;
+}
+
+#about-head .about-des{
+    width:50%;
+}
+
+#about-head .about-des  p{
+    line-height: 25px;
+}
+
+#about-head .about-des #sliding-text{
+    background: #0C8078;
+    padding: 2px;
+    color:#e3e6f3;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#about-app{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+#about-app a{
+    text-decoration: underline;
+    color: #5851db;
+}
+
+#about-app .about-video{
+    width:65%;
+    height:80%;
+    margin: 50px auto; 
+    filter:drop-shadow(1px 25px 20px rgba(0,0,0,0.3));
+    
+}
+
+#about-app .about-video video{
+    width:100%;
+    border-radius: 50px;  
+}
+
+/*-----------------------------  CONTACT PAGE STYLE  -----------------------------------*/
+
+#hero-contact{
+    background-image: url('assets/img/about/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hero-contact h2,
+#hero-contact p{
+    color: #e3e6f3;
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .contact-info{
+    margin-right: 90px;
+    width: 45%;
+}
+#contact .contact-info h6{
+    font-size: 16px;
+    font-weight: 100;
+}
+#contact .contact-info h3{
+    font-size: 32px;
+    margin:15px 0;
+}
+
+#contact .contact-info h5{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#contact .contact-info p,
+#contact .contact-info i{
+    font-size: 14px;
+    font-weight: 600;
+    color: #606063;
+}
+
+#contact .contact-info .info{
+    display:flex;
+    gap: 15px;
+    align-items: baseline;;
+}   
+
+.contact-map{
+    width:55%;
+    height: 400px;
+}
+.contact-map iframe{
+    width:100%;
+    height:100%;
+    border-radius: 24px;
+    filter:drop-shadow(0px 25px 20px rgba(0,0,0,0.3))
+}
+
+#form-details{
+    display: flex;
+    margin:50px 130px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 16px;
+}
+
+#form-details span{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#form-details h2{
+    font-size: 32px;
+    margin:15px 0;
+}
+
+#form-details form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    gap: 20px;
+}
+#form-details input,
+#form-details textarea{
+    padding: 8px 4px 4px 4px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+#form-details input:focus,
+#form-details textarea:focus{
+    outline: none;
+    
+}
+
 /*-----------------------------  MEDIA  QUERIES  -----------------------------------*/
 
 /*-----------------------------  TABLET DEVICES  -----------------------------------*/
@@ -1003,7 +1183,16 @@ body {
     width: 100%;
     gap: 20px;
   }
+  #hero-about, #hero-blog, #hero-shop {
+    height: 30vh;
 }
+#about-head .about-img img {
+    width: 100%;
+    height: 300px;
+}
+}
+
+
 
 /*-----------------------------  MOBILE DEVICES  -----------------------------------*/
 
@@ -1095,6 +1284,40 @@ body {
     }
     #pro-details .single-pro-details button {
        width: 80%;
+    }
+
+    #blog .blog-box {
+        flex-direction: column;
+    }
+    #blog  .blog-img {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
+    #blog .blog-box:last-child{
+        margin-bottom: 0px;
+    }
+
+    #about-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #about-head .about-des,
+    #about-head .about-img {
+        width: 100%;
+    }
+    #about-head .about-img{
+        margin-right: 0px;
+    }
+    #about-app .about-video {
+        width: 95%;
+        height: 80%;
+        margin: 30px auto 15px;
+        filter: drop-shadow(1px 25px 20px rgba(0,0,0,0.3));
     }
 }
 
