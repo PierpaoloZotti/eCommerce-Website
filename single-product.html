@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>zFashion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="header">
+      <a href="#"><div class="logo"></div></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+          <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </nav>
+    <section id="pro-details">
+      <div class="single-pro-image">
+        <img
+          src="assets/img/products/f1.jpg"
+          width="100%"
+          id="mainImage"
+          alt="product image"
+        />
+
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="assets/img/products/f1.jpg"
+              width="100%"
+              class="small-img"
+              alt="produto"
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="assets/img/products/f2.jpg"
+              width="100%"
+              class="small-img"
+              alt="produto"
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="assets/img/products/f3.jpg"
+              width="100%"
+              class="small-img"
+              alt="produto"
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="assets/img/products/f4.jpg"
+              width="100%"
+              class="small-img"
+              alt="produto"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="single-pro-details">
+        <h6>Home / T-Shirt</h6>
+        <h4>T-Shirt Fashion Masculina</h4>
+        <h2>R$69.00</h2>
+        <select>
+          <option>Selecione o tamanho</option>
+          <option>X-Pequeno</option>
+          <option>Pequeno</option>
+          <option>Medio</option>
+          <option>Grande</option>
+          <option>X-Grande</option>
+        </select>
+        <div class="quantity">
+            <i class="minus-btn fas fa-minus" onclick="decrementValue()"></i>
+            <input type="number" id="quantidade" name="quantidade" step="1" value="1" />
+            <i class="plus-btn fas fa-plus"  onclick="incrementValue()"></i>
+                <button class="normal">Adicione ao carrinho</button>
+
+        </div>
+        <h4>Detalhes do produto</h4>
+        <span
+          >Esta camisa masculina fashion é feita de um tecido de algodão
+          premium, suave ao toque e de alta qualidade. O corte moderno e
+          elegante da camisa é perfeito para homens que desejam um visual
+          sofisticado e atualizado. O tecido apresenta uma textura sutil e uma
+          leveza que proporciona conforto durante todo o dia, tornando-a ideal
+          para uso em diversas ocasiões, seja em um ambiente de trabalho ou em
+          um encontro casual. A camisa possui botões de alta qualidade que
+          garantem durabilidade e facilidade ao vestir.
+          </span>
+      </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Produtos Patrocinados</h2>
+        <p>Summer Collection - Design novo e moderno</p>
+        <div class="pro-container">
+          <div class="pro">
+            <img src="assets/img/products/f8.jpg" alt="produto" />
+            <div class="description">
+              <span>adidas</span>
+              <h5>Cartoon Astronaut T-Shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="buy">
+                <h4>R$79.<span>95</span></h4>
+                <a href="#"><i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro">
+            <img src="assets/img/products/f7.jpg" alt="produto" />
+            <div class="description">
+              <span>adidas</span>
+              <h5>Floral T-Shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="buy">
+                <h4>R$89.<span>95</span></h4>
+                <a href="#"><i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro">
+            <img src="assets/img/products/f6.jpg" alt="produto" />
+            <div class="description">
+              <span>adidas</span>
+              <h5>Floral T-Shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="buy">
+                <h4>R$69.<span>95</span></h4>
+                <a href="#"><i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro">
+            <img src="assets/img/products/f5.jpg" alt="produto" />
+            <div class="description">
+              <span>adidas</span>
+              <h5>Floral T-Shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="buy">
+                <h4>R$69.<span>95</span></h4>
+                <a href="#"><i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          
+         
+          </div>
+        </div>
+      </section>
+  
+    <section id="newsletter" class="section-m1">
+      <div class="newsletter-container">
+        <div>
+          <h3>Fique por dentro das novidades</h3>
+          <p>
+            Receba emails sobre as novidades e <span>ofertas especiais.</span>
+          </p>
+        </div>
+        <div class="form">
+          <input
+            type="email"
+            name="email"
+            id="newsletter_mail"
+            placeholder="Seu melhor endereço mail..."
+            autocomplete="off"
+          />
+          <button>Inscriva-se</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="section-p1">
+      <div class="footer_container">
+        <div class="contact">
+          <h4>Contatos</h4>
+          <p><span>Edereço:</span>Av. Gaspar de Lemos - Ilha de Guaratiba</p>
+          <p><span>Telefone:</span>+5521 981302437</p>
+          <p><span>Horario:</span>10:00 - 16:00 Seg - Sab</p>
+          <h4>Siga-me</h4>
+          <ul class="social_footer">
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <h4>Sobre</h4>
+          <ul>
+            <li><a href="#">Sobre nos</a></li>
+            <li><a href="#">Informações de entrega</a></li>
+            <li><a href="#">Politica de privacidade</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+            <li><a href="#">Contate-nos</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h4>Meu perfil</h4>
+          <ul>
+            <li><a href="#">Acesse</a></li>
+            <li><a href="#">Meu carrinho</a></li>
+            <li><a href="#">Meus favoridos</a></li>
+            <li><a href="#">Rastreamento pedidos</a></li>
+            <li><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+        <div class="install">
+          <h4>Instale a nossa App</h4>
+          <p>Encontra-se no App Store ou no Google Play</p>
+          <div class="stores">
+            <img src="assets/img/pay/app.jpg" alt="apple store" />
+            <img src="assets/img/pay/play.jpg" alt="google play" />
+          </div>
+          <p>Sistema de pagamento seguro</p>
+          <img src="assets/img/pay/pay.png" alt="card options" />
+        </div>
+      </div>
+      <div class="copyrights section-p1">
+        <img src="assets/img/logo.svg" alt="logo" />
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
