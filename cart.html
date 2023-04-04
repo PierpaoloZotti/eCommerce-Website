@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>zFashion - about us</title>
+    <title>zFashion - cart</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -23,10 +23,12 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li id="lg-bag">
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a class="active" href="cart.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
           </li>
           <a href="#" id="close"><i class="fas fa-times"></i></a>
         </ul>
@@ -37,89 +39,39 @@
       </div>
     </nav>
 
-    <section id="hero-about">
-      <h2>#QuemSomos</h2>
-      <p>Nosso objetivo é a sua felicidade</p>
+    <section id="hero-cart">
+      <h2>#SacolaVaziaNãoFicaDePé</h2>
+      <p>O resumo das suas escolhas...</p>
     </section>
 
-    <section id="about-head" class="section-p1">
-      <div class="about-img">
-        <img src="assets/img/about/a6.jpg" alt="digital art" />
-      </div>
-      <div class="about-des">
-        <h2>Quem Somos</h2>
-        <p>
-          Nosso objetivo é fornecer a você a melhor experiência de compra
-          on-line possível. Desde a navegação fácil em nosso site até a entrega
-          rápida e eficiente, queremos que você se sinta satisfeito em todos os
-          aspectos. Nós nos esforçamos para oferecer as últimas tendências e
-          estilos de moda, garantindo que nossos produtos sejam de alta
-          qualidade e a preços acessíveis. Estamos constantemente atualizando
-          nosso estoque para atender às suas necessidades e desejos.
-        </p>
-        <abbr title="">
-            Acreditamos que todos merecem se sentir bem consigo mesmos,
-          independentemente de sua idade, tamanho ou orçamento.
-          </abbr>
-          <br><br>
-          <marquee id="sliding-text" scrollamount="5">Obrigado por escolher nosso e-commerce de vestuário - estamos aqui para você.</marquee>
-      </div>
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>EXCLUIR</td>
+            <td>IMAGEM</td>
+            <td>PRODUTO</td>
+            <td>QUANTITADE</td>
+            <td>PREÇO</td>
+            <td>SUBTOTAL</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#">
+                <i class="far fa-times-circle"> </i>
+              </a>
+            </td>
+            <td><img src="assets/img/products/f1.jpg" alt="produto" id="image"></td>
+            <td><h4>Camisa floral</h4></td>
+            <td><h4>2</h4></td>
+            <td class="preco"><h4>150</h4></td>
+            <td class="subtotal"><h4>300</h4></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-
-    <section id="about-app" class="section-p1">
-        <h1>Instale Nosso <a href="">App</a></h1>
-        <div class="about-video">
-                    <video autoplay muted loop src="assets/img/about/1.mp4"></video>
-        </div>
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-          <img src="assets/img/features/f1.png" alt="free shipping" />
-          <h6>Entrega gratuita</h6>
-        </div>
-        <div class="fe-box">
-          <img src="assets/img/features/f2.png" alt="free shipping" />
-          <h6>Pedido online</h6>
-        </div>
-        <div class="fe-box">
-          <img src="assets/img/features/f3.png" alt="free shipping" />
-          <h6>Economize dinheiro</h6>
-        </div>
-        <div class="fe-box">
-          <img src="assets/img/features/f4.png" alt="free shipping" />
-          <h6>Promoções</h6>
-        </div>
-        <div class="fe-box">
-          <img src="assets/img/features/f5.png" alt="free shipping" />
-          <h6>Venda feliz</h6>
-        </div>
-        <div class="fe-box">
-          <img src="assets/img/features/f6.png" alt="free shipping" />
-          <h6>Suporte 24/7</h6>
-        </div>
-      </section>
-  
-      <section id="newsletter">
-        <div class="newsletter-container">
-          <div>
-            <h3>Fique por dentro das novidades</h3>
-            <p>
-              Receba emails sobre as novidades e <span>ofertas especiais.</span>
-            </p>
-          </div>
-          <div class="form">
-            <input
-              type="email"
-              name="email"
-              id="newsletter_mail"
-              placeholder="Seu melhor endereço mail..."
-              autocomplete="off"
-            />
-            <button>Inscriva-se</button>
-          </div>
-        </div>
-      </section>  
 
     <section id="footer" class="section-p1">
       <div class="footer_container">
